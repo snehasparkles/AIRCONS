@@ -1,0 +1,460 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Titillium Web", sans-serif;
+	
+}
+body {
+	overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  .container {
+	max-width: 1000px; /* Set a maximum width for the content */
+	margin: 0 auto; /* Center the container horizontally */
+  }
+  
+:root {
+	--mainColor: #ffffff;
+	--mainColorLight: #ffffff;
+	--secondaryColor: #09006c;
+	--textColor: #000000;
+}
+
+
+/*small*/
+/* Media query for devices with width up to 414 pixels (including 414 pixels) */
+@media only screen and (max-width: 414px) {
+	.banner {
+	  width: 300px; /* Adjust width for smaller screens */
+	}
+	header .nav-btn {
+	  visibility: visible;
+	  opacity: 1;
+	}
+	nav a {
+	  margin: 0 0.5rem;
+	  font-size: 1.2rem; /* Decrease font size for smaller screens */
+	  color: var(--textColor);
+	  text-decoration: none;
+	}
+	header {
+	  height: 60px; /* Adjust height for smaller screens */
+	  padding: 0 1rem; /* Adjust padding for smaller screens */
+	}
+	header nav {
+	  top: 0; /* Remove offset from top */
+	  height: 100vh; /* Adjust height to cover the full viewport */
+	  padding-top: 60px; /* Adjust padding top to prevent content from being covered by header */
+	}
+	header .responsive_nav {
+	  transform: translateY(0); /* Show the navigation menu */
+	}
+	nav .nav-close-btn {
+	  top: 1rem; /* Adjust top position */
+	  right: 1rem; /* Adjust right position */
+	}
+	nav a {
+	  font-size: 1.2rem; /* Decrease font size for smaller screens */
+	}
+  }
+  
+
+@media only screen and (max-width: 1024px) {
+	.banner{
+		width: 450px;
+	}
+	header .nav-btn {
+		visibility: visible;
+		opacity: 1;
+	}
+    nav a {
+        margin: 0 0.5rem;
+        color: var(--textColor);
+        text-decoration: none;
+    }
+    header {
+        display: flex;
+        align-items: center;  
+        justify-content: space-between;
+        height: 80px;
+        padding: 0 2rem;
+        background-color: var(--mainColor);
+        color: var(--textColor);
+        box-shadow: 1px 1px 2px rgb(0, 0, 0);
+    }
+
+	header nav {
+		position: fixed;
+		top: -100vh;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+		background-color: var(--mainColor);
+		transition: 1s;
+	}
+
+	header .responsive_nav {
+		transform: translateY(100vh);
+	}
+
+	nav .nav-close-btn {
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+	}
+
+	nav a {
+		font-size: 1.5rem;
+      
+	}
+
+
+}
+
+#buttoncall{
+	width: 100px;
+	background-color: #09006c;
+	color: #ffffff;
+	padding: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border: none;
+}
+#buttoncall a{
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: bold;
+}
+#buttonwhats{
+	width: 100px;
+	background-color: #DCE8FF;
+	color: #ffffff;
+	padding: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border: none;
+	font-weight: bold;
+}
+#buttonwhats a{
+	text-decoration: none;
+	color: #2a2929;
+}
+
+#buttoncall:hover {
+	background-color: #0e0288;
+  }
+  
+#buttoncall:active {
+	box-shadow: #505051 2px 2px 0 0;
+	transform: translate(2px, 2px);
+  }
+
+
+#buttonwhats:hover {
+	background-color: rgb(189, 222, 250);
+  }
+  
+#buttonwhats:active {
+	box-shadow: #6f6f6f 2px 2px 0 0;
+	transform: translate(2px, 2px);
+  }
+
+
+
+
+
+
+.home {
+	/* background-color: #ffffff;
+	padding-top: 30px;
+	background-image: url("./images/ban.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover; /* Cover the entire element */
+ /* Fix the background while scrolling */
+	/* height: 95vh; /* Set the height to fill the viewport height */
+	/* width: 100%; */
+
+  }
+
+  #greet{
+	background-color: #ffffff;
+	border-radius: 15px;
+	padding: 30px;
+  }
+  
+
+.name{
+	color: #09006c;
+	font-size: larger;
+	font-weight: bolder;
+}
+@media only screen and (min-width: 1400px) {
+	.menu{
+		margin-left: 400px;
+	}
+}
+#rowimg{
+	background-color: aliceblue;
+	border-radius:15px ;
+}
+#buttonservice{
+	width: 100px;
+	background-color: #09006c;
+	color: #ffffff;
+	padding: 10px;
+	border-radius: 10px;
+	border: none;
+}
+
+#buttonservice:hover {
+	background-color: #0e0288;
+  }
+  
+#buttonservice:active {
+	box-shadow: #505051 2px 2px 0 0;
+	transform: translate(2px, 2px);
+  }
+
+
+#buttonservice a{
+	text-decoration: none;
+	color: #ffffff;
+}
+.content{
+	padding: 30px;
+}
+.content h4{
+	text-align: center;
+}
+.content p{
+	justify-content: center;
+}
+.about{
+	background-color: aliceblue;
+	padding: 5px;
+}
+#foot {
+	background-color: #09006c;
+	
+
+}
+#footcolor{
+	color: #ffffff;
+}
+.ac{
+	background-color: #ffffff;
+
+	background-image: url("https://www.shutterstock.com/image-photo/technician-service-cleaning-air-conditioner-600nw-1498805081.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover; /* Cover the entire element */
+ /* Fix the background while scrolling */
+	height: 60vh; /* Set the height to fill the viewport height */
+	width: 100%;
+	/* opacity: 0.5; */
+}
+
+.rf{
+	background-color: #ffffff;
+	padding-top: 30px;
+	background-image: url("https://media.istockphoto.com/id/1169128877/photo/refrigerator-repairing.jpg?s=612x612&w=0&k=20&c=ER74f92XZJM6a_qlT-B26VwHftbWEcDimT2xUMikcj4=");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover; /* Cover the entire element */
+ /* Fix the background while scrolling */
+	height: 60vh; /* Set the height to fill the viewport height */
+	width: 100%;
+}
+
+.wm{
+	background-color: #ffffff;
+	padding-top: 30px;
+	background-image: url("https://t4.ftcdn.net/jpg/05/17/68/49/360_F_517684929_IzyYXKkVIsy7NZTXh9kLjdrgwF7Qse9b.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover; /* Cover the entire element */
+ /* Fix the background while scrolling */
+	height: 60vh; /* Set the height to fill the viewport height */
+	width: 100%;
+}
+
+.formspace{
+	width: 410px;
+	background-color: aliceblue;
+	padding: 30px;
+	border-radius: 15px;
+	font-weight: bold;
+	box-shadow: -1px 2px 15px 0px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: -1px 2px 15px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: -1px 2px 15px 0px rgba(0, 0, 0, 0.75);
+}
+
+.contact{
+	background-color: rgb(255, 255, 255);
+}
+.contactus{
+	 /* Set the height to fill the viewport height */
+	width: 100%;
+}
+.contactimg{
+	width: 100%;
+}
+#contacttitle{
+	font-weight: bold;
+	color: #09006c;
+	margin: 10px;
+}
+iframe{
+	border-radius: 15px;
+	border: 1px solid rgb(35, 34, 34);
+	width: 500px;
+}
+#contact_details{
+	text-decoration: none;
+	color: #000000;
+}
+#livelocation{
+	font-weight: bold;
+}
+#text-justify{
+	text-align: justify;
+}
+/* .bannerimg{
+	width: 100%;
+	height:;
+} */
+
+ 
+/* CSS for screens smaller than medium breakpoint */
+
+#row{
+	height: 100vh;
+}
+@media (max-width:950px){
+#banimg img{
+	height: 400px;
+}
+}
+@media (max-width: 767.98px) {
+  #banimg img {
+    height: auto; /* Resetting height */
+    max-width: 100%; /* Ensuring the image fits within its container */
+  }
+}
+
+@media (min-width: 767.98px) {
+	.ac{
+		background-color: #ffffff;
+	
+		background-image: url("https://www.shutterstock.com/image-photo/technician-service-cleaning-air-conditioner-600nw-1498805081.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover; /* Cover the entire element */
+	 /* Fix the background while scrolling */
+		height: 100vh; /* Set the height to fill the viewport height */
+		width: 100%;
+		/* opacity: 0.5; */
+	}
+	
+	.rf{
+		background-color: #ffffff;
+		padding-top: 30px;
+		background-image: url("https://media.istockphoto.com/id/1169128877/photo/refrigerator-repairing.jpg?s=612x612&w=0&k=20&c=ER74f92XZJM6a_qlT-B26VwHftbWEcDimT2xUMikcj4=");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover; /* Cover the entire element */
+	 /* Fix the background while scrolling */
+		height: 100vh; /* Set the height to fill the viewport height */
+		width: 100%;
+	}
+	
+	.wm{
+		background-color: #ffffff;
+		padding-top: 30px;
+		background-image: url("https://i.pinimg.com/736x/51/f1/d4/51f1d46072692c002f007bf7383e9f5c.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover; /* Cover the entire element */
+	 /* Fix the background while scrolling */
+		height: 100vh; /* Set the height to fill the viewport height */
+		width: 100%;
+	}
+  }
+
+
+#nav{
+    background-color: #09006c;
+	margin-bottom: 30px;
+}
+
+.nav-li{
+    
+    padding-right: 30px;
+
+    
+}
+.navbar-brand{
+	font-weight: 700;
+	
+	
+
+}
+/* #logoimg{
+	
+} */
+
+.nav-a{
+    color: rgb(232, 233, 235);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-a:hover{
+    text-decoration: none;
+    color: white;
+}
+#navbarNav{
+	margin-top: 3px;
+    text-align: center;
+   background-color: #09006c;
+   padding: 10px;
+  }
+
+
+#logo{
+    color: white;
+
+    font-weight: bolder;
+    padding-left: 20px;
+    font-size: 20px;
+
+}  
+
+
+.typewrite > .wrap {
+	border-right: 0.08em solid white; /* Adjust thickness of the blinking cursor */
+	animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+	white-space: nowrap;
+	overflow: hidden;
+  }
+  
+  @keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: white }
+  }
+  
